@@ -1,0 +1,1 @@
+# Bitácora de pruebas y rechazos
