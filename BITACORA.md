@@ -47,7 +47,17 @@ y mostrarResultado muestra la calificación final y el estado.
 
 | Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
 |---|---|---|---|---|
-| 1 | $500 | Descuento $0.00, IVA $80.00, Total $580.00 | | |
-| 2 | $900 | Descuento $0.00, IVA $144.00, Total $1044.00 | | |
-| 3 | $1000 | Descuento $100.00, IVA $144.00, Total $1044.00 | | |
-| 4 | $5000 | Descuento $1000.00, IVA $640.00, Total $4640.00 | | |
+| 1 | $500 | Descuento $0.00, IVA $80.00, Total $580.00 | Descuento $0.00, IVA $80.00, Total $580.00 | Sí |
+| 2 | $900 | Descuento $0.00, IVA $144.00, Total $1044.00 | Descuento $0.00, IVA $144.00, Total $1044.00 | Sí |
+| 3 | $1000 | Descuento $100.00, IVA $144.00, Total $1044.00 | Descuento $100.00, IVA $144.00, Total $1044.00 | Sí |
+| 4 | $5000 | Descuento $1000.00, IVA $640.00, Total $4640.00 | Descuento $1000.00, IVA $640.00, Total $4640.00 | Sí |
+
+### Rechazos
+
+Sin rechazos.
+
+Se verificó que leerSubtotal solicita y devuelve el subtotal,
+calcularDescuento aplica el descuento correspondiente,
+calcularIVA calcula el IVA después del descuento,
+calcularTotal obtiene el total final
+y mostrarTicket muestra los datos del ticket.
