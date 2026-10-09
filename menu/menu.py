@@ -11,7 +11,10 @@ def ejecutarEjercicio1():
 
 
 def ejecutarEjercicio2():
-    print("Ejercicio 2 pendiente.")
+    parcial1, parcial2, parcial3 = ej2.leerParciales()
+    calificacionFinal = ej2.calcularFinal(parcial1, parcial2, parcial3)
+    estado = ej2.determinarEstado(parcial1, parcial2, parcial3, calificacionFinal)
+    ej2.mostrarResultado(calificacionFinal, estado)
 
 
 def ejecutarEjercicio3():

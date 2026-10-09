@@ -20,13 +20,23 @@ Se verificó que leerConsumo solicita y devuelve el consumo,
 calcularPago realiza únicamente el cálculo indicado
 y mostrarRecibo muestra el consumo y el importe.
 
+
 ## Ejercicio 2. Calificación final
 
 ### Casos de prueba
 
 | Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
 |---|---|---|---|---|
-| 1 | (80, 70, 90) | 81.00, Aprobado | | |
-| 2 | (70, 70, 70) | 70.00, Aprobado | | |
-| 3 | (100, 100, 40) | 76.00, Reprobado | | |
-| 4 | (69, 70, 70) | 69.70, Reprobado | | |
+| 1 | (80, 70, 90) | 81.00, Aprobado | 81.00, Aprobado | Sí |
+| 2 | (70, 70, 70) | 70.00, Aprobado | 70.00, Aprobado | Sí |
+| 3 | (100, 100, 40) | 76.00, Reprobado | 76.00, Reprobado | Sí |
+| 4 | (69, 70, 70) | 69.70, Reprobado | 69.70, Reprobado | Sí |
+
+### Rechazos
+
+Sin rechazos.
+
+Se verificó que leerParciales solicita y devuelve las tres calificaciones,
+calcularFinal calcula únicamente la calificación final,
+determinarEstado evalúa si el alumno aprueba o reprueba
+y mostrarResultado muestra la calificación final y el estado.
