@@ -77,3 +77,30 @@
 
 
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+
+import math
+
+
+def leerMinutos():
+    minutos = int(input("Ingrese el tiempo de estancia en minutos: "))
+    return minutos
+
+
+def calcularCobro(minutos):
+    if minutos == 0:
+        cobro = 0
+    elif minutos <= 60:
+        cobro = 20
+    else:
+        minutos_adicionales = minutos - 60
+        horas_adicionales = math.ceil(minutos_adicionales / 60)
+        cobro = 20 + (horas_adicionales * 15)
+
+    if cobro > 150:
+        cobro = 150
+
+    return cobro
+
+
+def mostrarCobro(cobro):
+    print(f"Importe a cobrar: ${cobro:.2f}")
