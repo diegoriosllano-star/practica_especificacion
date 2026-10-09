@@ -77,3 +77,30 @@
 
 
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+
+def leerParciales():
+    parcial1 = int(input("Ingrese la calificación del primer parcial: "))
+    parcial2 = int(input("Ingrese la calificación del segundo parcial: "))
+    parcial3 = int(input("Ingrese la calificación del tercer parcial: "))
+    return parcial1, parcial2, parcial3
+
+
+def calcularFinal(parcial1, parcial2, parcial3):
+    calificacionFinal = (parcial1 * 0.30) + (parcial2 * 0.30) + (parcial3 * 0.40)
+    return calificacionFinal
+
+
+def determinarEstado(parcial1, parcial2, parcial3, calificacionFinal):
+    if parcial1 < 50 or parcial2 < 50 or parcial3 < 50:
+        estado = "Reprobado"
+    elif calificacionFinal >= 70:
+        estado = "Aprobado"
+    else:
+        estado = "Reprobado"
+
+    return estado
+
+
+def mostrarResultado(calificacionFinal, estado):
+    print(f"Calificación final: {calificacionFinal:.2f}")
+    print("Estado:", estado)
