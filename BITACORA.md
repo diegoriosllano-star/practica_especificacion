@@ -40,3 +40,14 @@ Se verificó que leerParciales solicita y devuelve las tres calificaciones,
 calcularFinal calcula únicamente la calificación final,
 determinarEstado evalúa si el alumno aprueba o reprueba
 y mostrarResultado muestra la calificación final y el estado.
+
+## Ejercicio 3. Total de compra
+
+### Casos de prueba
+
+| Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
+|---|---|---|---|---|
+| 1 | $500 | Descuento $0.00, IVA $80.00, Total $580.00 | | |
+| 2 | $900 | Descuento $0.00, IVA $144.00, Total $1044.00 | | |
+| 3 | $1000 | Descuento $100.00, IVA $144.00, Total $1044.00 | | |
+| 4 | $5000 | Descuento $1000.00, IVA $640.00, Total $4640.00 | | |
