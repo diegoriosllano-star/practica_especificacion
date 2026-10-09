@@ -68,8 +68,17 @@ y mostrarTicket muestra los datos del ticket.
 
 | Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
 |---|---|---|---|---|
-| 1 | 45 minutos | $20.00 | | |
-| 2 | 60 minutos | $20.00 | | |
-| 3 | 61 minutos | $35.00 | | |
-| 4 | 150 minutos | $50.00 | | |
-| 5 | 600 minutos | $150.00 | | |
+| 1 | 45 minutos | $20.00 | $20.00 | Sí |
+| 2 | 60 minutos | $20.00 | $20.00 | Sí |
+| 3 | 61 minutos | $35.00 | $35.00 | Sí |
+| 4 | 150 minutos | $50.00 | $50.00 | Sí |
+| 5 | 600 minutos | $150.00 | $150.00 | Sí |
+
+### Rechazos
+
+Sin rechazos.
+
+Se verificó que leerMinutos solicita y devuelve el tiempo de estancia,
+calcularCobro calcula el importe considerando las horas adicionales,
+las fracciones de hora y el cobro máximo,
+y mostrarCobro muestra el importe a cobrar.
