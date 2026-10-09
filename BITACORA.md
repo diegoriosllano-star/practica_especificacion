@@ -61,3 +61,15 @@ calcularDescuento aplica el descuento correspondiente,
 calcularIVA calcula el IVA después del descuento,
 calcularTotal obtiene el total final
 y mostrarTicket muestra los datos del ticket.
+
+## Ejercicio 4. Estacionamiento
+
+### Casos de prueba
+
+| Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
+|---|---|---|---|---|
+| 1 | 45 minutos | $20.00 | | |
+| 2 | 60 minutos | $20.00 | | |
+| 3 | 61 minutos | $35.00 | | |
+| 4 | 150 minutos | $50.00 | | |
+| 5 | 600 minutos | $150.00 | | |
