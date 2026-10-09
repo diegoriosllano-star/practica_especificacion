@@ -19,3 +19,14 @@ Sin rechazos.
 Se verificó que leerConsumo solicita y devuelve el consumo,
 calcularPago realiza únicamente el cálculo indicado
 y mostrarRecibo muestra el consumo y el importe.
+
+## Ejercicio 2. Calificación final
+
+### Casos de prueba
+
+| Caso | Entrada | Esperado (a mano) | Obtenido | Coincide |
+|---|---|---|---|---|
+| 1 | (80, 70, 90) | 81.00, Aprobado | | |
+| 2 | (70, 70, 70) | 70.00, Aprobado | | |
+| 3 | (100, 100, 40) | 76.00, Reprobado | | |
+| 4 | (69, 70, 70) | 69.70, Reprobado | | |
