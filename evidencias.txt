@@ -1,0 +1,17 @@
+=== Ejercicio 5. Renta de bicicletas ===
+
+Caso 1:
+Horas de renta: 1
+Importe a pagar: $30.00
+
+Caso 2:
+Horas de renta: 2
+Importe a pagar: $60.00
+
+Caso 3:
+Horas de renta: 3
+Importe a pagar: $76.50
+
+Caso 4:
+Horas de renta: 4
+Importe a pagar: $102.00

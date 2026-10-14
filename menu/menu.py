@@ -2,6 +2,7 @@ from ejercicios import ejercicio1_luz as ej1
 from ejercicios import ejercicio2_calificacion as ej2
 from ejercicios import ejercicio3_compra as ej3
 from ejercicios import ejercicio4_estacionamiento as ej4
+from ejercicios import ejercicio5_renta as ej5
 
 
 def ejecutarEjercicio1():
@@ -30,6 +31,10 @@ def ejecutarEjercicio4():
     cobro = ej4.calcularCobro(minutos)
     ej4.mostrarCobro(cobro)
 
+def ejecutarEjercicio5():
+    horas = ej5.leerHoras()
+    importe = ej5.calcularRenta(horas)
+    ej5.mostrarRenta(horas, importe)
 
 def mostrarMenu():
     print()
@@ -38,6 +43,7 @@ def mostrarMenu():
     print("2. Calificación final")
     print("3. Total de compra")
     print("4. Estacionamiento")
+    print("5. Renta de bicicletas")
     print("0. Salir")
 
 
@@ -55,5 +61,7 @@ def menus():
             ejecutarEjercicio3()
         elif opcion == "4":
             ejecutarEjercicio4()
+        elif opcion == "5":
+            ejecutarEjercicio5()
         elif opcion != "0":
             print("Opción no válida.")

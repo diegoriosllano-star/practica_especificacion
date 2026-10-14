@@ -81,4 +81,4 @@ Sin rechazos.
 Se verificó que leerMinutos solicita y devuelve el tiempo de estancia,
 calcularCobro calcula el importe considerando las horas adicionales,
 las fracciones de hora y el cobro máximo,
-y mostrarCobro muestra el importe a cobrar.
+y mostrarCobro muestra el importe a cobrar. 
