@@ -4,6 +4,7 @@ from ejercicios import ejercicio3_compra as ej3
 from ejercicios import ejercicio4_estacionamiento as ej4
 from ejercicios import ejercicio5_renta as ej5
 from ejercicios import ejercicio6_cine as ej6
+from ejercicios import ejercicio7_multa as ej7
 
 
 def ejecutarEjercicio1():
@@ -42,6 +43,11 @@ def ejecutarEjercicio6():
     precio = ej6.calcularPrecio(edad)
     ej6.mostrarPrecio(edad, precio)
 
+def ejecutarEjercicio7():
+    velocidad = ej7.leerVelocidad()
+    multa = ej7.calcularMulta(velocidad)
+    ej7.mostrarMulta(velocidad, multa)
+
 def mostrarMenu():
     print()
     print("PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN")
@@ -51,6 +57,7 @@ def mostrarMenu():
     print("4. Estacionamiento")
     print("5. Renta de bicicletas")
     print("6. Boleto de cine")
+    print("7. Multa por velocidad")
     print("0. Salir")
 
 
@@ -72,5 +79,7 @@ def menus():
             ejecutarEjercicio5()
         elif opcion == "6":
             ejecutarEjercicio6()
+        elif opcion == "7":
+            ejecutarEjercicio7()
         elif opcion != "0":
             print("Opción no válida.")
